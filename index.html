@@ -221,7 +221,7 @@
 			} else {
 				setStatusMode('indeterminate');
 				engine.startGame({
-					mainPack: 'https://media.githubusercontent.com/media/robinduckett/godot-drone/main/drone.pck',
+					mainPack: 'https://robinduckettdrone.s3.eu-west-2.amazonaws.com/drone.pck',
 					'onProgress': function (current, total) {
 						if (total > 0) {
 							statusProgressInner.style.width = current/total * 100 + '%';
