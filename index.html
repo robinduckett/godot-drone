@@ -221,6 +221,7 @@
 			} else {
 				setStatusMode('indeterminate');
 				engine.startGame({
+					mainPack: 'https://github.com/robinduckett/godot-drone/raw/main/drone.pck',
 					'onProgress': function (current, total) {
 						if (total > 0) {
 							statusProgressInner.style.width = current/total * 100 + '%';
